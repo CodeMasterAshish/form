@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Form</h1>
+  <form action="/submit" method="post">
+    <label for="first-name">First Name:</label><br>
+    <input type="text" id="first-name" name="first-name" placeholder="First name" required><br><br>
+    
+    <label for="last-name">Last Name:</label><br>
+    <input type="text" id="last-name" name="last-name" required placeholder="Last name"><br><br>
+    
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required placeholder="dob"><br><br>
+
+    <label for="mobile-number">Mobile Number:</label><br>
+    <input 
+      type="tel" 
+      id="mobile-number" 
+      name="mobile-number" 
+      pattern="[0-9]{10}" 
+      maxlength="10" 
+      placeholder="1234567890" 
+      title="Please enter a valid 10-digit mobile number">
+    <br><br>
+    
+    <button type="submit">Submit</button>
+  </form>
+  <script src="script.js"></script>
+</body>
+</html>
